@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js" 
+
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepikakapila-1991/nodejs-weather-website.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepikakapila-1991/nodejs-weather-website/issues"
+  },
+  "homepage": "https://github.com/deepikakapila-1991/nodejs-weather-website#readme",
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.1",
