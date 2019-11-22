@@ -7,6 +7,7 @@ const geoCode = require('./utils/geoCode')
 const foreCast = require('./utils/forecast')
 
 const mApp = mExpress()
+const port = process.env.PORT || 3000
 
 // Define paths for express connfig
 const publicDirectory = path.join(__dirname, '../public')
@@ -109,7 +110,11 @@ mApp.get('*', (req, res) => {
 })
 
 
-mApp.listen(3000, () => {
-    console.log('Server is up on port 3000')
+// mApp.listen(3000, () => {
+//     console.log('Server is up on port 3000')
+// })
+
+mApp.listen(port, () => {
+    console.log('Server is up on port' + port)
 })
 
